@@ -50,11 +50,56 @@ body{
 .eth > svg{
 	align-self: center;
 	padding: 10px;
+	margin-left: 5px;
 }
 
 .eth > h3, p{
 	font-family: 'Outfit', sans-serif;
 	align-self: center;
+}
+
+.eth > h3{
+	color: #00FFF8;
+	font-size: 90%;
+	margin-right: 40px;
+}
+
+.eth > p{
+	color: #8BACD9;
+	font-size: 80%;
+}
+
+.credit{
+	display: flex;
+	flex-flow: row;
+}
+
+hr{
+	width: 230px;
+}
+.credit > img{
+	order: -1;
+	overflow: hidden;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	border: solid 1px #ffffff;
+	align-self: center;
+	margin-left: 13px;
+
+}
+
+.credit > p{
+	color: #8b93a3;
+	margin-left: 15px;
+	font-size: 80%;
+}
+
+.credit p a{
+	text-decoration: none;
+	color: #ffffff;
 }
 
 footer{
