@@ -29,10 +29,20 @@ body{
 	font-family: 'Outfit', sans-serif;
 	font-size: 95%;
 	font-weight: 900;
-	color: #ffffff;
 	margin-left: 13.5px;
 
 }
+
+#card_details h1 a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+#card_details h1 a:active{
+	color: #00FFF8;
+}
+
 
 #card_details > p{
 	font-family: 'Outfit', sans-serif;
@@ -100,6 +110,10 @@ hr{
 .credit p a{
 	text-decoration: none;
 	color: #ffffff;
+}
+
+.credit p a:active{
+	color: #00FFF8;
 }
 
 footer{
