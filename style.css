@@ -83,10 +83,12 @@ body{
   transition: .5s ease;
   background-color: #00FFF8;
   border-radius: 13px;
+  user-select: none;
+  pointer-events: none;
 
 }
 
-.card:hover .overlay{
+.card > a:active+.overlay{
 	opacity: 0.6;
 }
 
