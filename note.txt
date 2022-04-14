@@ -11,3 +11,5 @@ Learnings
 
 -[When to use margin vs padding in CSS](https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css)
 -[Using svg as icon on my page](
+
+-[arial-label attribute]

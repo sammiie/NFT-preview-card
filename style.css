@@ -16,15 +16,6 @@ body{
 	border-radius: 15px;
 }
 
-#card_details > img{
-	order: -1;
-	width: 90%;
-	height: 50%;
-	border-radius: 15px;
-	align-self: center;   								/* centert the image cross-wise (horizontally) */
-	margin-top: 12px;
-}
-
 #card_details > h1{
 	font-family: 'Outfit', sans-serif;
 	font-size: 95%;
@@ -32,6 +23,16 @@ body{
 	margin-left: 13.5px;
 
 }
+
+
+#card_details > p{
+	font-family: 'Outfit', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	color: #8b93a3;
+	margin: 5px 13.5px 10px 13.5px;
+}
+
 
 #card_details h1 a{
 	text-decoration: none;
@@ -44,13 +45,80 @@ body{
 }
 
 
-#card_details > p{
-	font-family: 'Outfit', sans-serif;
-	font-weight: 400;
-	font-size: 13px;
-	color: #8b93a3;
-	margin: 5px 13.5px 10px 13.5px;
+.card{
+	order: -1;
+	justify-content: center;
+	position: relative;
 }
+
+
+.card > a{
+	display: block;
+	position: relative;
+
+}
+
+
+.card a img{
+	display: block;
+	max-width: 100%;
+	width: 90%;
+	height: 50%;
+	border-radius: 20px;
+/*	align-self: center;	*/						/* centert the image cross-wise (horizontally) */
+	padding: 12px;
+/*	margin-top: 12px;*/
+}
+
+
+.overlay {
+  position: absolute;
+  top: 12px;
+  bottom: 12;
+  left: 12px;
+  right: 12;
+  height: 92%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00FFF8;
+  border-radius: 13px;
+
+}
+
+.card:hover .overlay{
+	opacity: 0.6;
+}
+
+.eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*.card > a::before{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-color: #00FFF8;
+	opacity: 0;
+}
+
+.card > a::after{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h48v48H0z'/%3E%3Cpath d='M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	opacity: 0;
+}
+*/
+
 
 .eth{
 	display: flex;
@@ -87,6 +155,8 @@ body{
 hr{
 	width: 230px;
 }
+
+
 .credit > img{
 	order: -1;
 	overflow: hidden;
